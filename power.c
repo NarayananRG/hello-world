@@ -3,9 +3,9 @@
 
 int main()
 {
-   int base,power;
-   scanf("%d%d",&base,&power);
-   int result=pow(base,power);
-   printf("%d",result);
+   double base,power;
+   scanf("%lf%lf",&base,&power);
+   double result=pow(base,power);
+   printf("%lf",result);
     return 0;
 }
