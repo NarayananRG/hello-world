@@ -2,7 +2,7 @@
 #include<math.h>
 int main()
 {
-int a,b,t,lcm,x,y;
+int a,b,t,x,y;
 printf("Enter two numbers");
 scanf("%d %d",&x,&y);
 b=y;
@@ -12,8 +12,8 @@ t=b;
 b=a%b;
 a=t;
 }
-lcm=(x*y)/a;
-printf("The hcf is %d lcm is %d",a,lcm);
+
+printf("The hcf is %d",a);
 return 0;
 }
 
