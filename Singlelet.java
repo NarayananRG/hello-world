@@ -1,13 +1,9 @@
 package singlelet;
-
-import java.util.Arrays;
 import java.util.Scanner;
-
 public class Singlelet 
 {	
 	public static void main(String[] args)
-	{
-	
+	{	
          Scanner in=new Scanner(System.in);
 	     String a=in.nextLine();
 	     char b[]=a.toCharArray();
@@ -25,29 +21,16 @@ public class Singlelet
 	    	 for (int j = 0; j < c.length; j++) 
 	    	 {
 	    		 if(c[i]==b[j])
-	    		 {
-	    			 count++;
-	    		 }
+			    count++;	    		 
 	    	 }
-	    			 k[l]=count;
-	    		 
+	    			 k[l]=count;	    		 
 				l++;
-			
-			
-		}
+	     }
 	     for (int i = 0; i < k.length; i++) 
-	     {
-	    	 if(k[i]%2!=0)
-	    	 {
+	     {   	 
 	    	 if(k[i]==1)
-	    	 {
-	    		 System.out.println(b[i]);
-	    		 //break;
-	    	 }
-	    	 }
-			
-		}
+	          System.out.println(b[i]);   	 
+	     }
 	}
-	
 
 }
